@@ -1,3 +1,5 @@
+package lesson2;
+
 public interface ArrayIntContainer {
 
     boolean deleteElementByIndex(int index);
