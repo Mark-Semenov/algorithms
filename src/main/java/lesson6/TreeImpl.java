@@ -43,18 +43,14 @@ public class TreeImpl<E extends Comparable<? super E>> implements Tree<E> {
             if (previous.getLeft() != null) {
                 build(previous.getLeft(), next);
             } else {
-                if (!contains(next)) {
-
-                    previous.setLeft(next);
-                }
+                previous.setLeft(next);
             }
         } else {
             if (previous.getRight() != null) {
                 build(previous.getRight(), next);
             } else {
-                if (!contains(next)) {
-                    previous.setRight(next);
-                }
+                previous.setRight(next);
+
             }
         }
     }
